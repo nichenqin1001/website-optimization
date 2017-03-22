@@ -11,9 +11,7 @@ npm install
 使用gulp命令搭建本地服务器
 
 ```bash
-gulp default
-or
-gulp
+npm run dev
 ```
 
 如有必要可先删除dist文件夹
@@ -55,6 +53,8 @@ http://localhost:5800
 - 使用`getElementsByClassName`代替`querySelectorAll`提高性能
 - 在`for循环`外声明变量
 - 在`updatePosition`函数外获取`mover`类
-- 根据屏幕宽度设置`mover`类的列数（`cols`变量），结合屏幕高度设置需要的`mover`类的数量
+- 根据屏幕宽度设置`mover`类的列数（`cols`变量）
+- 根据屏幕高度设置`mover`类的行数（`rows`变量）
+- 根据屏幕高度设置`mover`类的间隔距离（`s`变量）
 
->在1600*900的屏幕上，生成了28个`mover`类
+    >在1600*900的屏幕上，生成了21个`mover`类

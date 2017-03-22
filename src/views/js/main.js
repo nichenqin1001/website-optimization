@@ -538,12 +538,11 @@ window.addEventListener('scroll', updatePositions);
 
 // 当页面加载时生成披萨滑窗
 document.addEventListener('DOMContentLoaded', function () {
-  var s = screen.height / 3;
+  var s = 256;
   var cols = Math.ceil(screen.width / s);
-  var rows = Math.ceil(screen.height / s);
+  var rows = Math.floor(screen.height / s);
   var movingPizzas1 = document.querySelector("#movingPizzas1");
   var elemCount = (cols * rows);
-  console.log(elemCount);
   var elem;
 
   for (var i = 0; i < elemCount; i++) {
