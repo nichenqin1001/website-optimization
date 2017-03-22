@@ -57,7 +57,4 @@ http://localhost:5800
 - 在`updatePosition`函数外获取`mover`类
 - 根据屏幕宽度设置`mover`类的列数（`cols`变量），结合屏幕高度设置需要的`mover`类的数量
 
->在1600*900的屏幕上，生成了21个`mover`类
-
-###### 性能演示
-![性能演示](https://raw.githubusercontent.com/nichenqin1001/website-optimization/master/src/views/images/2017-03-21.png)
+>在1600*900的屏幕上，生成了28个`mover`类
