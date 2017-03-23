@@ -79,3 +79,9 @@ http://localhost:5800
     ```
 
     >在`style.css`文件中为`.mover`添加`left: 0;`
+
+### 性能（2017-3-23）
+
+![性能](https://raw.githubusercontent.com/nichenqin1001/website-optimization/master/dist/views/images/2017-03-23.png)
+![性能](https://raw.githubusercontent.com/nichenqin1001/website-optimization/master/dist/views/images/2017-03-23%20(1).png)
+![性能](https://raw.githubusercontent.com/nichenqin1001/website-optimization/master/dist/views/images/2017-03-23%20(2).png)
