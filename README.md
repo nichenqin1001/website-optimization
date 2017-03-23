@@ -47,7 +47,7 @@ http://localhost:5800
 - 将获取`document.body.scrollTop`的行为从`for循环`中提取出来，避免强制同步布局
 - 将获取`document.querySelector("#movingPizzas1")`的行为从`for循环`中提取出来，避免强制同步布局
 
-###### 第二次提交修改内容（main.js）
+###### 第二次提交修改内容（`main.js`）
 
 - 使用`getElementsByClassName`代替`querySelectorAll`提高性能
 - 在`for循环`外声明变量
@@ -56,3 +56,26 @@ http://localhost:5800
 - 根据屏幕高度设置`mover`类的行数（`rows`变量）
 
     >在1600*900的屏幕上，生成了21个`mover`类
+
+###### 第三次提交修改内容(`main.js`)
+
+- 使用transform: translate3d来代替修改left值
+
+    ```bash
+    var phase = [];
+    var top = document.body.scrollTop / 1250;
+
+    // 在主循环外保存参数的数组
+    for (var j = 0; j < 5; j++) {
+        phase.push(100 * Math.sin(top + j));
+    }
+
+    // 使用translate3d修改pizza位置
+    var translate;
+    for (var i = 0; i < items.length; i++) {
+        translate = items[i].basicLeft + phase[i % 5] + 'px';
+        items[i].style.transform = "translate3d(" + translate + ", 0, 0)";
+    }
+    ```
+
+    >在`style.css`文件中为`.mover`添加`left: 0;`
